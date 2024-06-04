@@ -1,0 +1,159 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "title",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "description",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      }
+    ],
+    "name": "AssessmentAdded",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "_title",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_description",
+        "type": "string"
+      }
+    ],
+    "name": "addAssessment",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "assessmentCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_id",
+        "type": "uint256"
+      }
+    ],
+    "name": "getAssessment",
+    "outputs": [
+      {
+        "components": {
+          "description": {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          "id": {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          "timestamp": {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          "title": {
+            "internalType": "string",
+            "name": "title",
+            "type": "string"
+          }
+        },
+        "internalType": "struct ReactAssessment.Assessment",
+        "name": "",
+        "type": "tuple"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllAssessments",
+    "outputs": [
+      {
+        "components": {
+          "description": {
+            "internalType": "string",
+            "name": "description",
+            "type": "string"
+          },
+          "id": {
+            "internalType": "uint256",
+            "name": "id",
+            "type": "uint256"
+          },
+          "timestamp": {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          "title": {
+            "internalType": "string",
+            "name": "title",
+            "type": "string"
+          }
+        },
+        "internalType": "struct ReactAssessment.Assessment[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAssessmentCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
+
